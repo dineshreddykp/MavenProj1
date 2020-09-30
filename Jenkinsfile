@@ -8,12 +8,12 @@ pipeline {
         }
 		 stage('clean'){
 		steps {
-        sh 'mvn -f clean'
+        sh 'mvn clean'
         }
 		}
         stage('MavenBuild'){
 		steps {
-        sh 'mvn -f test'
+        sh 'mvn test'
         }
 		}
         stage('BuildSuccessMessage'){
