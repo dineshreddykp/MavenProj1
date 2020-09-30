@@ -8,12 +8,12 @@ pipeline {
         }
 		 stage('clean'){
 		steps {
-        sh 'mvn -f MavenProj1/pom.xml clean'
+        sh 'mvn -f clean'
         }
 		}
         stage('MavenBuild'){
 		steps {
-        sh 'mvn -f MavenProj1/pom.xml test'
+        sh 'mvn -f test'
         }
 		}
         stage('BuildSuccessMessage'){
